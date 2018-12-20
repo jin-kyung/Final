@@ -2,10 +2,9 @@ import bs4
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 
-
 my_url = "https://archive.org/details/opensource_audio?sort=titleSorter&page="
 
-A = input(print("please: "))
+A = input(print("please type music title or keyword you want to search: "))
 
 page_number = 0
 for all_page in range(133):
@@ -20,7 +19,6 @@ for all_page in range(133):
 
     containers = soups.findAll('div', {"class": "C234"})
 
-    A = input(print("please: "))
     for container in containers:
         creators = container.findAll('span', {"class": "byv"})
         titles = container.findAll('div', {"class": "ttl"})

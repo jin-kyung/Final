@@ -15,8 +15,8 @@ for all_page in range(133):
     pages_html = uClient.read()
     uClient.close()
 
-    soup = soup(pages_html, "html.parser")
-    titles = soup.findAll('div', {"class":"ttl"})
+    soups = soup(pages_html, "html.parser")
+    titles = soups.findAll('div', {"class":"ttl"})
 
     each_title = ' '
     for title in titles:

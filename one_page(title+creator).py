@@ -26,8 +26,10 @@ for container in containers:
     for title in titles:
         each_title = each_title + title.text
 
-    if A in each_creator or each_title:
-        print("creator: " + each_creator + ", " + "title: " + each_title)
+        lists = "title: " + each_title.lstrip() + ",   " + "creator: " + each_creator.lstrip()
+
+        if A in lists:
+            print(lists)
 
 
 
