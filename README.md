@@ -9,3 +9,12 @@ The purposes of the program are
   1) to search easily
   2) to find all data which includes searching words.
 
+# How to use
+Just type any word you want to find and click run button. You can see the list of titles with creators.
+
+If you want to know how Final works, please see Final.ipynb.
+
+
+
+
+
